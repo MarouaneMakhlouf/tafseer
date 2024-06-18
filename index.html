@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>الـتـفـسـيـر الـمـيـسـر</h2>
+        </header>
+        <main id="main">
+            <div class="opt">
+                <button onclick="selectOption('all')">القران الكريم كاملا</button>
+            </div>
+            <p style="color: aliceblue; font-size: 18px;">او</p>
+            <div class="opt">
+                <button>السورة</button>
+                <select name="" id="sorah"></select>
+            </div>
+            <div class="opt">
+                <button>الأية</button>
+                <div class="">
+                <select name="" id="ayah">
+                    <option value="0">الكل</option>
+                </select>
+                </div>
+            </div>
+            <button class="submit">بـدأ</button>
+            
+            
+            
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- <script>
+        
+        axios
+            .get("./tafseer.json")
+            .then(res=>{
+                console.log(res)
+            })
+    </script> -->
+</body>
+</html>
